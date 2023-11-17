@@ -5,7 +5,7 @@ Welome to this Elastic GenAI Workshop for Developers.  We'll be using Github Cod
 ![architecture](images/architecture.jpg)
 
 ## To run this labl you will need:
-* a special ```env``` file from your instructor holding some of the temporary keys for today's lab
+* a workshop key from your instructor to load the environment variables required to run these notebooks
 * your own github account to use the free Github cC
 
 ## Instructions
