@@ -21,13 +21,13 @@ def initElastic():
     if 'ELASTIC_CLOUD_ID' in os.environ:
       es = Elasticsearch(
         cloud_id=os.environ['ELASTIC_CLOUD_ID'],
-        basic_auth=(os.environ['ELASTIC_USER'], os.environ['ELASTIC_PASSWORD']),
+        api_key=(os.environ['ELASTIC_APIKEY_ID'], os.environ['ELASTIC_APIKEY_SECRET']),
         request_timeout=30
       )
     else:
       es = Elasticsearch(
         os.environ['ELASTIC_URL'],
-        basic_auth=(os.environ['ELASTIC_USER'], os.environ['ELASTIC_PASSWORD']),
+        api_key=(os.environ['ELASTIC_APIKEY_ID'], os.environ['ELASTIC_APIKEY_SECRET']),
         request_timeout=30
       )
 
